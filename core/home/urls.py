@@ -8,8 +8,8 @@ urlpatterns = [
     # path('admin/', admin.site.urls),
     # path('login/' , views.login_page, name='login'),
     # path('register/', views.register_page, name='register'),
-    
-     path('', views.recipes, name='recipes'),
+    #
+    #  spath('', views.recipes, name='recipes'),
 #     path('update_recipe/<id>', views.update_recipe, name='update_recipe'),
 #     path('delete_recipe/<id>', views.delete_recipe, name='delete_recipe'),
 ]

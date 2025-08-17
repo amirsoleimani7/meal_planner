@@ -1,9 +1,10 @@
 from django.contrib.auth.base_user import BaseUserManager
 
 class UserManager(BaseUserManager):
-    use_in_migrations = True 
+    use_in_migrations = True
 
-    def create(self , phone , password=None , **extra_fileds):
+
+    def create(self , phone ,password=None , **extra_fileds ):
         if not phone:
             raise ValueError('phone number is required')
         
@@ -12,7 +13,6 @@ class UserManager(BaseUserManager):
         user.save() 
         return user       
     
-
     def superuser(self , phone , password , **extra_fields):
         extra_fields.setdefault('is_staff' , True)
         extra_fields.setdefault('is_superuser' , True)

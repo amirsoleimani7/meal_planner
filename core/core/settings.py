@@ -105,6 +105,9 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
+AUTH_USER_MODEL = "home.GFG" #Appname.model(classname)
+
+
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
