@@ -1,5 +1,7 @@
 from django.db import models
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User , AbstractBaseUser
+from .manager import UserManager
+
 
 class Recipe(models.Model):
     user = models.ForeignKey(User , on_delete=models.SET_NULL , null=True ,blank=True)
@@ -12,3 +14,6 @@ class Recipe(models.Model):
     
 
 
+
+
+class FGG
