@@ -1,6 +1,6 @@
 from django.contrib import admin
-from . import models
+from .models import GFG
 
 
 # admin.site.register(models.Recipe)  
-admin.site.register(models.GFG)
+admin.site.register(GFG)
