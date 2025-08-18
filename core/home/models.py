@@ -11,14 +11,14 @@ class GFG(AbstractUser):
     objects = UserManager()
 
 
-# class Recipe(models.Model):
-#     user = models.ForeignKey(GFG , on_delete=models.SET_NULL , null=True ,blank=True)
-#     day = models.CharField(max_length=100 , default='something')
-#     name = models.CharField(max_length=100 , default='something')
-#     description = models.TextField(default='something')
+class Recipe(models.Model):
+    user = models.ForeignKey(GFG , on_delete=models.SET_NULL , null=True ,blank=True)
+    day = models.CharField(max_length=100 , default='something')
+    name = models.CharField(max_length=100 , default='something')
+    description = models.TextField(default='something')
     
-#     def __str__(self):
-#         return self.name
+    def __str__(self):
+        return self.name
     
 
 
